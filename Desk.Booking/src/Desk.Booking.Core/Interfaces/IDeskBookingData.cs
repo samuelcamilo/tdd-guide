@@ -1,6 +1,6 @@
 ﻿using Desk.Booking.Core.Entities;
 
-namespace Desk.Booking.Core
+namespace Desk.Booking.Core.Interfaces
 {
     public interface IDeskBookingData
     {
