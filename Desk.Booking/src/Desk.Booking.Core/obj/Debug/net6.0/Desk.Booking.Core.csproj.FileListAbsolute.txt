@@ -1,0 +1,12 @@
+S:\Development\GitHub\deskbooking-backend\Desk.Booking\src\Desk.Booking.Core\bin\Debug\net6.0\Desk.Booking.Core.deps.json
+S:\Development\GitHub\deskbooking-backend\Desk.Booking\src\Desk.Booking.Core\bin\Debug\net6.0\Desk.Booking.Core.dll
+S:\Development\GitHub\deskbooking-backend\Desk.Booking\src\Desk.Booking.Core\bin\Debug\net6.0\ref\Desk.Booking.Core.dll
+S:\Development\GitHub\deskbooking-backend\Desk.Booking\src\Desk.Booking.Core\bin\Debug\net6.0\Desk.Booking.Core.pdb
+S:\Development\GitHub\deskbooking-backend\Desk.Booking\src\Desk.Booking.Core\obj\Debug\net6.0\Desk.Booking.Core.csproj.AssemblyReference.cache
+S:\Development\GitHub\deskbooking-backend\Desk.Booking\src\Desk.Booking.Core\obj\Debug\net6.0\Desk.Booking.Core.GeneratedMSBuildEditorConfig.editorconfig
+S:\Development\GitHub\deskbooking-backend\Desk.Booking\src\Desk.Booking.Core\obj\Debug\net6.0\Desk.Booking.Core.AssemblyInfoInputs.cache
+S:\Development\GitHub\deskbooking-backend\Desk.Booking\src\Desk.Booking.Core\obj\Debug\net6.0\Desk.Booking.Core.AssemblyInfo.cs
+S:\Development\GitHub\deskbooking-backend\Desk.Booking\src\Desk.Booking.Core\obj\Debug\net6.0\Desk.Booking.Core.csproj.CoreCompileInputs.cache
+S:\Development\GitHub\deskbooking-backend\Desk.Booking\src\Desk.Booking.Core\obj\Debug\net6.0\Desk.Booking.Core.dll
+S:\Development\GitHub\deskbooking-backend\Desk.Booking\src\Desk.Booking.Core\obj\Debug\net6.0\ref\Desk.Booking.Core.dll
+S:\Development\GitHub\deskbooking-backend\Desk.Booking\src\Desk.Booking.Core\obj\Debug\net6.0\Desk.Booking.Core.pdb
