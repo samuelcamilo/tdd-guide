@@ -14,7 +14,7 @@ namespace Desk.Booking.Core.Test
         public DeskBookingBusinessTest()
         {
             _deskBookingData = Substitute.For<IDeskBookingData>();
-            _business = new DeskBookingBusiness();
+            _business = new DeskBookingBusiness(_deskBookingData);
         }
 
         [Fact]
