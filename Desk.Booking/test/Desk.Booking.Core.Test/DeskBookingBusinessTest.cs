@@ -9,19 +9,13 @@ namespace Desk.Booking.Core.Test
     public class DeskBookingBusinessTest
     {
         private readonly DeskBookingBusiness _business;
+        private readonly DeskBookingRequest _request;
+
         private readonly IDeskBookingData _deskBookingData;
 
         public DeskBookingBusinessTest()
         {
-            _deskBookingData = Substitute.For<IDeskBookingData>();
-            _business = new DeskBookingBusiness(_deskBookingData);
-        }
-
-        [Fact]
-        public void ShouldReturnDeskBookingResult()
-        {
-            // arrange...
-            var request = new DeskBookingRequest
+            _request = new DeskBookingRequest
             {
                 FirstName = "Samuel",
                 LastName = "Camilo",
@@ -29,8 +23,15 @@ namespace Desk.Booking.Core.Test
                 DateRequest = System.DateTime.Now
             };
 
+            _deskBookingData = Substitute.For<IDeskBookingData>();
+            _business = new DeskBookingBusiness(_deskBookingData);
+        }
+
+        [Fact]
+        public void ShouldReturnDeskBookingResult()
+        {
             // act...
-            DeskBookingResult result = _business.BookDesk(request);
+            DeskBookingResult result = _business.BookDesk(_request);
 
             // assert...
             Assert.NotNull(result);
@@ -49,17 +50,8 @@ namespace Desk.Booking.Core.Test
         [Fact]
         public void ShouldSaveDeskBooking()
         {
-            // arrange...
-            var request = new DeskBookingRequest
-            {
-                FirstName = "Samuel",
-                LastName = "Camilo",
-                Email = "samuelcamilo@example.com",
-                DateRequest = System.DateTime.Now
-            };
-
             // act...
-            _business.BookDesk(request);
+            _business.BookDesk(_request);
 
             // assert...
             _deskBookingData.Received().Save(Arg.Any<DeskBooking>());
