@@ -6,6 +6,11 @@ namespace Desk.Booking.Core.Test
 {
     public class DeskBookingBusinessTest
     {
+        private readonly DeskBookingBusiness _business;
+
+        public DeskBookingBusinessTest() 
+            => _business = new DeskBookingBusiness();
+
         [Fact]
         public void ShouldReturnDeskBookingResult()
         {
@@ -18,10 +23,8 @@ namespace Desk.Booking.Core.Test
                 DateRequest = System.DateTime.Now
             };
 
-            var business = new DeskBookingBusiness();
-
             // act...
-            DeskBookingResult result = business.BookDesk(request);
+            DeskBookingResult result = _business.BookDesk(request);
 
             // assert...
             Assert.NotNull(result);
@@ -30,11 +33,8 @@ namespace Desk.Booking.Core.Test
         [Fact]
         public void ShouldThrowExceptionIfRequestisNull()
         {
-            // arrange...
-            var business = new DeskBookingBusiness();
-
             // act...
-            var exception = Assert.Throws<ArgumentNullException>(() => business.BookDesk(null));
+            var exception = Assert.Throws<ArgumentNullException>(() => _business.BookDesk(null));
 
             // assert...
             Assert.Equal("request", exception.ParamName);

@@ -8,10 +8,8 @@ namespace Desk.Booking.Core
 
         public DeskBookingResult BookDesk(DeskBookingRequest request)
         {
-            if (request == null)
-            {
+            if (request is null)
                 throw new ArgumentNullException(nameof(request));
-            }
 
             return new DeskBookingResult
             {
