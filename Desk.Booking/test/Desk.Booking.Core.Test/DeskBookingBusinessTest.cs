@@ -1,4 +1,5 @@
 using Desk.Booking.Core.Entities;
+using System;
 using Xunit;
 
 namespace Desk.Booking.Core.Test
@@ -24,6 +25,19 @@ namespace Desk.Booking.Core.Test
 
             // assert...
             Assert.NotNull(result);
+        }
+
+        [Fact]
+        public void ShouldThrowExceptionIfRequestisNull()
+        {
+            // arrange...
+            var business = new DeskBookingBusiness();
+
+            // act...
+            var exception = Assert.Throws<ArgumentNullException>(() => business.BookDesk(null));
+
+            // assert...
+            Assert.Equal("request", exception.ParamName);
         }
     }
 }
