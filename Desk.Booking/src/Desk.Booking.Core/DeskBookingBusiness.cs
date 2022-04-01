@@ -4,6 +4,8 @@ namespace Desk.Booking.Core
 {
     public class DeskBookingBusiness
     {
+        public DeskBookingBusiness() { }
+
         public DeskBookingResult BookDesk(DeskBookingRequest request)
         {
             return new DeskBookingResult
