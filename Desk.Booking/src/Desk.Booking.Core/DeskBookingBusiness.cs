@@ -6,7 +6,13 @@ namespace Desk.Booking.Core
     {
         public DeskBookingResult BookDesk(DeskBookingRequest request)
         {
-            throw new NotImplementedException();
+            return new DeskBookingResult
+            {
+                FirstName = request.FirstName,
+                LastName = request.LastName,
+                Email = request.Email,
+                DateRequest = request.DateRequest
+            };
         }
     }
 }
